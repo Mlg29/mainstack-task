@@ -230,7 +230,7 @@ const Card = styled.div`
     background: #FFFFFF;
     border: 1px solid #EFF1F6;
     border-radius: 12px;
-    width: 45%;
+    width: 43%;
     padding: 20px;
 `
 
