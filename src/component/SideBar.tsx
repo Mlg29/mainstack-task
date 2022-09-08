@@ -66,7 +66,7 @@ function SideBar() {
             itemList?.map((data, i) => {
               return <View key={i}>
                 <Image src={data?.icon} />
-                <Paragraph text={data?.name} fontSize={Size.extraSmall} fontWeight={data?.name === "Dashboard" ? "bold" : "400"} color={data?.name === "Dashboard" ? Color.secondary : null} margin='0px 0px 0px 10px' />
+                <Paragraph text={data?.name} fontSize={Size.extraSmall} fontWeight={data?.name === "Dashboard" ? "700" : "400"} color={data?.name === "Dashboard" ? Color.secondary : Color.dark} margin='0px 0px 0px 10px' />
               </View>
             })
           }

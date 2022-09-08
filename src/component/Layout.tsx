@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Color } from '../utils/constant/color'
+import { LayoutType } from '../utils/types'
 import SideBar from './SideBar'
 
-function Layout({ children }) {
+const Layout: React.FC<LayoutType> = ({ children }) => {
     return (
         <Container>
             <Div>

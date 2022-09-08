@@ -23,3 +23,14 @@ export type TextProps = {
     | '900',
     margin?: string
 };
+
+export type ChartType = {
+    type: string,
+    viewDate?: any,
+    viewValue?: false | number[],
+    count?: false | any[]
+}
+
+export type LayoutType = {
+    children: any
+}

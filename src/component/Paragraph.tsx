@@ -11,7 +11,7 @@ const Paragraph = memo(
         textDecoration = 'none',
         textAlign='left',
         color = 'black',
-        fontFamily = 'Söhne',
+        fontFamily = 'Nunito',
         fontWeight = '400',
         margin= "0%",
         ...rest

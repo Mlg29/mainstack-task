@@ -9,10 +9,12 @@ import {
     Tooltip,
     Filler,
     Legend,
-    ArcElement
+    ArcElement,
+    ChartData
   } from 'chart.js';
 
   import { Doughnut, Line } from 'react-chartjs-2';
+import { ChartType } from '../utils/types';
   
 
   
@@ -31,7 +33,7 @@ ChartJS.register(
 
   
 
-const ChartComponent = ({type, viewDate, viewValue, count}) => {
+const ChartComponent: React.FC<ChartType> = ({type, viewDate, viewValue, count}) => {
 
 
 
@@ -72,7 +74,7 @@ const ChartComponent = ({type, viewDate, viewValue, count}) => {
 
   const labels = viewDate;
 
-  const data = {
+  const datas: ChartData<"line", false | number[] | undefined, string>  = {
     labels,
     datasets: [
       {
@@ -116,7 +118,7 @@ const ChartComponent = ({type, viewDate, viewValue, count}) => {
       {
         type === 'line' && <Line 
           options={options} 
-          data={data} 
+          data={datas} 
           />
       }
 
