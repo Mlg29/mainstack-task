@@ -16,7 +16,7 @@ function Dashboard() {
     useEffect(() => {
         const loadData = async () => {
             try {
-                var response = await axios.get('http://test.api.mainstack.io')
+                var response = await axios.get('https://test.api.mainstack.io')
 
                 if (response?.status === 200) {
                     setViews(response?.data?.graph_data?.views)
